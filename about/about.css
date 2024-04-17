@@ -1,0 +1,141 @@
+/* LANDING SECTION */
+.about-page-landing-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+    padding-top: 5rem;
+    background: url("../images/aboutLandingBg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+.about-page-landing-section::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #13131251;
+}
+.about-page-landing-section h1 , .about-page-landing-section h2 , .about-page-landing-section p{
+    position: relative;
+}
+.about-page-landing-section h1{
+    font-family: var(--cursive);
+    color: var(--golden);
+    font-size: 6rem;
+}
+.about-page-landing-section  p{
+    max-width: 500px;
+}
+
+
+/* SECOND SECTION */
+.about-page-second-section{
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.about-page-second-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+.about-page-second-section-left .btn-a{
+    width: 120px;
+}
+.about-page-second-section-left h2 span{
+    color: var(--darkGolden);
+    font-family: var(--cursive);
+}
+.about-page-second-section-right img{
+    width: 400px;
+}
+
+/* THIRD SECTION */
+.about-page-third-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(242, 241, 241);
+    padding: 3rem 2rem;
+}
+.about-page-third-section-card{
+    width: 90%;
+    height: 450px;
+    padding: 1rem 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.about-page-third-section-card:nth-child(2){
+    background-color: #b4b48f;
+}
+.about-page-third-section-card:nth-child(3){
+    background-color: #b29e78;
+}
+.about-page-third-section-card:nth-child(4){
+    background-color: #b4b48f;
+}
+.about-page-third-section-card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    width: 40%;
+    height: 100%;
+    color: white;
+    padding: 2rem 2rem;
+    gap: 1rem;
+}
+.about-page-third-section-card-left p{
+    font-size: 12px;
+}
+.about-page-third-section-card-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* FORTH SECTION */
+.about-page-forth-section{
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.about-page-forth-section h1{
+    width: 70%;
+    max-width: 500px;
+    font-size: 3rem;
+}
+.about-page-forth-section h1 span:nth-child(2){
+    font-family: var(--cursive);
+    color: var(--golden);
+}
+.about-page-forth-section h1 span:nth-child(1){
+    color: var(--darkGolden);
+}
+
+/* FIFTH SECTION */
+.about-page-fifth-section{
+    height: 300px;
+    width: 100%;
+    background: url("../images/landingBg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
