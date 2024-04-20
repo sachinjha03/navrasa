@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -18,10 +19,12 @@ body{
 }
 :root{
     --golden : #FFD700;
+    --green : 	#25d366;
     --darkGolden : #c36507;
     --lightGreen : #f3f2e9;
     --cursive : "Great Vibes", cursive;
     --paragraph : "Mulish", sans-serif;
+    --handwritten :"Kaushan Script", cursive;
 }
 h1{
     font-size: 4rem;
@@ -46,11 +49,12 @@ a{
 .btn-a{
     padding: 0.6rem 1.2rem;
     border-radius: 4px;
-    background-color: var(--golden);
+    background-color: var(--green);
+    color: white;
     transition: 0.6s;
 }
 .btn-a:hover{
-    background-color: var(--darkGolden);
+    background-color: var(--golden);
     color: white;
 }
 
@@ -61,7 +65,7 @@ a{
     right: 3%;
     width: 50px;
     height: 50px;
-    background-color: var(--golden);
+    background-color: var(--green);
     border-radius: 50%;
     z-index: 999;
     display: flex;
@@ -125,8 +129,9 @@ a{
 }
 
 .landing-section .cursive{
-    font-family: var(--cursive);
+    font-family: var(--handwritten);
     font-weight: lighter;
+    font-size: 7rem;
     color: white;
 }
 .landing-section h1 , .landing-section p , .landing-section h2 , .landing-section h3{
@@ -163,6 +168,10 @@ a{
         top: 10%;
     }
 }
+.landing-section h3{
+    max-width: 700px;
+    text-align: center;
+}
 
 
 /* SECOND-SECTION */
@@ -176,7 +185,7 @@ a{
 }
 .second-section h1{
     color: var(--darkGolden);
-    font-family: var(--cursive);
+    font-family: var(--handwritten);
 }
 .second-section-bottom{
     width: 100%;
@@ -204,7 +213,7 @@ a{
 .third-section{
     width: 100%;
     height: 100vh;
-    background: url("./images/couple.jpg");
+    background: url("./images/landingThirdSection.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -221,7 +230,7 @@ a{
     left: 0%;
     width: 100%;
     height: 100%;
-    background-color: #13131231;
+    background-color: #13131296;
 }
 .third-section h2{
     position: relative;
@@ -230,7 +239,7 @@ a{
 }
 .third-section h2 span{
     color: var(--golden);
-    font-family: var(--cursive);
+    font-family: var(--handwritten);
 }
 
 
@@ -243,7 +252,7 @@ a{
     align-items: center;
 }
 .forth-section-left img{
-    width: 450px;
+    width: 350px;
 }
 .forth-section-right{
     max-width: 500px;
@@ -287,12 +296,43 @@ a{
     justify-content: space-evenly;
     align-items: center;
     gap: 1.5rem;
+    position: relative;
 }
-.sixth-section-top img{
+.sixth-section-top-card{
     width: 300px;
     height: 400px;
-    object-fit: cover;
+    position: relative;
 }
+.sixth-section-top-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.sixth-section-top-card::before{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    z-index: 99;
+}
+.sixth-section-top-card:nth-child(1)::before{
+    content: "Wedding Event";
+}
+.sixth-section-top-card:nth-child(2)::before{
+    content: "Corporate Event";
+}
+.sixth-section-top-card:nth-child(3)::before{
+    content: "Social Gathering";
+}
+
 .sixth-section h2{
     font-family: var(--cursive);
     color: var(--darkGolden);
@@ -327,10 +367,10 @@ a{
 }
 .eight-section-right h3 span{
     color: var(--darkGolden);
-    font-family: var(--cursive);
+    font-family: var(--handwritten);
 }
 .eight-section-right .btn-a{
-    width: 120px;
+    width: 250px;
 }
 .eight-section-left img{
     width: 300px;
@@ -396,6 +436,37 @@ a{
     background-color: #FFD700;
     border-radius: 8px;
 }
+
+
+
+/* FAQ SECTION */
+.faq-section{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.faq-section .grid-card{
+    padding: 1rem 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background-color: white;
+    height: 50px;
+    overflow: hidden;
+    transition: 0.6s;
+    border-radius: 4px;
+}
+.faq-section .grid-card:hover{
+    height:140px;
+}
+.faq-section .grid-card p{
+    font-size: 12px;
+}
+.faq-section .grid-card h4{
+    color: var(--darkGolden);
+}
 /* FOOTER SECTION */
 #footer{
     padding: 3rem 2rem;
@@ -421,13 +492,13 @@ a{
     width: 200px;
 }
 #footerColumn2 a{
-    font-size: 12px;
+    font-size: 14px;
 }
 #footerColumn2 a:hover{
     color: var(--darkGolden);
 }
 #footerColumn3 p{
-    font-size: 10px;
+    font-size: 12px;
 }
 .basic-row{
     display: flex;

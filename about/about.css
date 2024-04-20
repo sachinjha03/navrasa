@@ -26,7 +26,7 @@
     position: relative;
 }
 .about-page-landing-section h1{
-    font-family: var(--cursive);
+    font-family: var(--handwritten);
     color: var(--golden);
     font-size: 6rem;
 }
@@ -55,6 +55,9 @@
 .about-page-second-section-left h2 span{
     color: var(--darkGolden);
     font-family: var(--cursive);
+}
+.about-page-second-section-left p{
+    font-size: 12px;
 }
 .about-page-second-section-right img{
     width: 400px;
