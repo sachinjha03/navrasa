@@ -1,3 +1,6 @@
+#navbar .navbar-left img{
+    filter: invert(0%);
+}
 .service-page-landing-section{
     padding: 3rem 2rem;
     display: flex;

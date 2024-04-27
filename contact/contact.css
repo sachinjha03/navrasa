@@ -1,26 +1,39 @@
+#navbar .navbar-left img{
+    filter: invert(0%);
+}
 .contact-page-landing-section{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 3rem 2rem;
-    padding-top: 5rem;
+    padding-top: 7rem;
 }
 .contact-form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border: 2px solid var(--darkGolden);
+    padding: 2rem 2rem;
+    transition: 0.6s;
+}
+.contact-form:hover{
+    background-color: var(--darkGolden);
+    color: white;
 }
 .input-box{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
+.input-box p{
+    font-size: 12px;
+}
 .input-field{
     border: none;
     outline: none;
-    width: 300px;
+    width: 350px;
     padding: 0.5rem 0.4rem;
 }
 
@@ -44,6 +57,9 @@ textarea{
     /* height: 20px; */
 }
 
+.contact-page-landing-section-left img{
+    width: 300px;
+}
 
 .contact-page-second-section{
     display: flex;
