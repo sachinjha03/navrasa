@@ -97,7 +97,7 @@
     background-color: #b4b48f;
 }
 .about-page-third-section-card:nth-child(3){
-    background-color: #b29e78;
+    background-color: var(--darkGolden);
 }
 .about-page-third-section-card:nth-child(4){
     background-color: #b4b48f;

@@ -9,3 +9,17 @@ let navbar = document.getElementById("navbar");
           navLogo.style.filter = "invert(100%)";
         }
       });
+
+      let i=1;
+      function plusOne(){
+        if(i<3){
+          i=i+1;
+          console.log(document.getElementById(`${i}`));
+          document.getElementById(`${i}`).style.transform = `translateX(100%)`;
+          console.log(i);
+        }
+        else{
+          i=0;
+          document.getElementById(`${i}`).style.transform = `translateX(0%)`;
+        }
+      }
