@@ -52,6 +52,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .service-card{
@@ -216,4 +217,41 @@
 }
 .service-page-third-section-middle-card p{
     font-size: 14px;
+}
+
+@media screen and (max-width:850px) {
+    .service-page-landing-section{
+        flex-direction: column;
+        padding: 5rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .service-page-landing-section-left{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:750px) {
+    .service-page-third-section-right{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:600px) {
+    .grid-card:hover{
+        height: 170px;
+    }
+}
+@media screen and (max-width:450px) {
+    .service-page-landing-section-right{
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        transform: rotate(0deg);
+        padding: 1rem 1rem;
+    }
+    .service-page-landing-section-left{
+        padding-top: 4rem;
+    }
 }
