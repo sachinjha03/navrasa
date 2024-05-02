@@ -107,7 +107,33 @@ a{
 .navbar-right .link-a:hover{
     color: var(--golden);
 }
-
+#navbar img:nth-child(3){
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+.side-menu{
+    padding: 3rem 2rem;
+    background-color: white;
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+    top: 0%;
+    right: 0%;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.side-menu img{
+    width: 150px;
+}
+.side-menu #closeBtn{
+    cursor: pointer;
+    width: 30px;
+}
 /* LANDING SECTION */
 .landing-section{
     width: 100%;
@@ -199,6 +225,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap-reverse;
     gap: 1rem;
 }
 .second-section-bottom-content{
@@ -273,6 +300,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .team-card{
@@ -496,6 +524,7 @@ a{
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 .testimonial-section-left{
     display: flex;
@@ -673,6 +702,12 @@ a{
     .faq-section .grid-card:hover{
         height: 170px;
     }
+    #navbar img:nth-child(3){
+        display: inline;
+    }
+    .navbar-right{
+        display: none;
+    }
 }
 @media screen and (max-width:600px) {
     .faq-section .grid-card{
@@ -688,5 +723,88 @@ a{
 @media screen and (max-width:450px) {
     html{
         font-size: 80%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .eight-section{
+        flex-direction: column-reverse;
+    }
+    .eight-section-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .fifth-section{
+        flex-direction: column;
+    }
+    .fifth-section-right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    html{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .second-section-bottom-image img{
+        width: 200px;
+    }
+    .overlayer{
+        padding-top: 10rem;
+    }
+    .overlayer h1{
+        font-size: 3rem;
+    }
+    .overlayer h3{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ball-ring{
+        display: none;
+    }
+    .overlayer{
+        padding-top: 0rem;
+    }
+    .third-section h2{
+        font-size: 1.5rem;
+    }
+    .overlayer h3{
+        width: 80%;
+    }
+    .second-section-bottom{
+        flex-direction: column;
+    }
+    .team-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team-section-middle{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        gap: 1rem;
+    }
+    .team-card{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width:450px) {
+    .fifth-section-left img{
+        width: 300px;
+    }
+    html{
+        font-size: 70%;
     }
 }
