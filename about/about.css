@@ -4,12 +4,13 @@
 /* LANDING SECTION */
 .about-page-landing-section{
     width: 100%;
-    min-height: 100vh;
+    /* height: 70vh; */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem 2rem;
-    padding-top: 5rem;
+    padding: 7rem 2rem;
+    /* padding-top: 5rem; */
     /* background: url("../images/aboutLandingBg.jpg");
     background-size: cover;
     background-position: center; */
@@ -43,17 +44,19 @@
     top: 0%;
     left: 0%;
     width: 100%;
-    /* height: 100vh; */
-    aspect-ratio: 16/9;
+    max-width: 100%;
+    height: auto;
+    /* aspect-ratio: 16/9; */
 }
 
 
 /* SECOND SECTION */
 .about-page-second-section{
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 .about-page-second-section-left{
@@ -91,6 +94,7 @@
     height: 450px;
     padding: 1rem 1rem;
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
 }
 .about-page-third-section-card:nth-child(2){
@@ -154,4 +158,57 @@
     background: url("../images/landingBg.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media screen and (max-width:1000px) {
+    .about-page-third-section-card-left{
+        width: 60%;
+    }
+    .about-page-second-section-right img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .about-page-second-section-right img{
+        width: 400px;
+    }
+    .about-page-third-section-card{
+        width: 90%;
+        height: auto;
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 1rem;
+    }
+    .about-page-third-section-card-left{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .about-page-forth-section h1{
+        font-size: 2rem;
+    }
+    .about-page-landing-section h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .about-page-landing-section{
+        height: 500px;
+    }
+    .about-page-landing-section video{
+        min-height: 700px;
+        /* aspect-ratio: auto; */
+        object-fit: cover;
+    }
+    .about-page-second-section-right img{
+        width: 300px;
+    }
+    .about-page-second-section{
+        padding-top:1rem;
+    }
 }
