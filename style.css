@@ -515,7 +515,9 @@ a{
 .eight-section-left img{
     width: 300px;
 }
-
+.eight-section-right p span{
+    font-weight: bold;
+}
 
 /* TESTIMONIAL SECTION */
 .testimonial-section{

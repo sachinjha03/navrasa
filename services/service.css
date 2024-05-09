@@ -31,7 +31,7 @@
     /* color: white; */
 }
 .service-page-landing-section-left .btn-a{
-    width: 170px;
+    width: 270px;
 }
 .service-page-landing-section-right{
     width: 300px;
@@ -161,6 +161,7 @@
     transition: 0.6s;
     border-radius: 4px;
 }
+
 .grid-card:hover{
     height:140px;
 }
@@ -172,11 +173,11 @@
 }
 .grid-card h4{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 .grid-card p{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: lighter;
 }
 
