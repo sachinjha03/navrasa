@@ -30,6 +30,10 @@
     position: relative;
     /* color: white; */
 }
+.service-page-landing-section-left h2{
+    color: var(--darkGolden);
+    font-weight: bold;
+}
 .service-page-landing-section-left .btn-a{
     width: 270px;
 }
@@ -129,7 +133,7 @@
 }
 .service-page-third-section-left p{
     max-width: 700px;
-    font-size: 12px;
+    font-size: 16px;
 }
 .service-page-third-section-left h2 {
     color: var(--darkGolden);
@@ -178,7 +182,7 @@
 }
 .grid-card p{
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .sixth-section-top-card{

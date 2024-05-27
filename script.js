@@ -5,8 +5,8 @@ let navbar = document.getElementById("navbar");
           navbar.style.backgroundColor = "white";
           navLogo.style.filter = "invert(0%)";
         } else {
-          navbar.style.backgroundColor = "transparent";
-          navLogo.style.filter = "invert(100%)";
+          navbar.style.backgroundColor = "white";
+          navLogo.style.filter = "invert(0%)";
         }
       });
 

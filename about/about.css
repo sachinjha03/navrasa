@@ -52,7 +52,7 @@
 
 /* SECOND SECTION */
 .about-page-second-section{
-    padding: 1.5rem 2rem;
+    padding: 3.5rem 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -70,12 +70,15 @@
 .about-page-second-section-left .btn-a{
     width: 120px;
 }
+.about-page-second-section-left h2{
+    font-weight: bold;
+}
 .about-page-second-section-left h2 span{
     color: var(--darkGolden);
     font-family: var(--cursive);
 }
 .about-page-second-section-left p{
-    font-size: 12px;
+    font-size: 16px;
 }
 .about-page-second-section-right img{
     width: 400px;
@@ -100,13 +103,15 @@
     gap: 1rem;
 }
 .about-page-third-section-card:nth-child(2){
-    background-color: #b4b48f;
+    /* background-color: #b4b48f; */
+    background-color: var(--darkGolden);
 }
 .about-page-third-section-card:nth-child(3){
     background-color: var(--darkGolden);
 }
 .about-page-third-section-card:nth-child(4){
-    background-color: #b4b48f;
+    /* background-color: #b4b48f; */
+    background-color: var(--darkGolden);
 }
 .about-page-third-section-card-left{
     display: flex;
@@ -122,7 +127,7 @@
     gap: 1rem;
 }
 .about-page-third-section-card-left p{
-    font-size: 12px;
+    font-size: 15px;
 }
 .about-page-third-section-card-right img{
     width: 100%;
