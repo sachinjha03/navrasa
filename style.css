@@ -630,14 +630,22 @@ a{
 .faq-section .grid-card h4{
     color: var(--darkGolden);
 }
+
+
+
 /* FOOTER SECTION */
 #footer{
     padding: 3rem 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: rgb(227, 227, 227);
+    /* background-color: rgb(227, 227, 227); */
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+#footer a{
+    color: white;
 }
 .footer-top{
     width: 100%;
@@ -654,12 +662,13 @@ a{
 }
 #footerColumn1 img{
     width: 200px;
+    filter: invert(100%);
 }
 #footerColumn2 a{
     font-size: 14px;
 }
 #footerColumn2 a:hover{
-    color: var(--darkGolden);
+    color: var(--golden);
 }
 #footerColumn3 p{
     font-size: 12px;
@@ -670,7 +679,7 @@ a{
     gap: 1rem;
 }
 .basic-row img{
-    filter: invert(60%);
+    /* filter: invert(60%); */
     width: 20px;
 }
 .basic-row .social-icon{
@@ -683,9 +692,10 @@ a{
     font-size: 12px;
 }
 .footer-bottom a{
-    color: blueviolet;
+    /* color: red; */
     font-size: 14px;
     text-decoration: underline;
+    color: #25d366;
 }
 
 
